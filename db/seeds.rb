@@ -6,14 +6,14 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-# puts "Generating 10 books"
+puts "Generating 10 books"
 
-# 10.times do |i|
-#   puts "A book is created"
-#   Article.create({
-#     title: Faker::Book.title,
-#     content: Faker::Books::Dune.quote
-#   })
-# end
+10.times do |i|
+  puts "A book is created"
+  Article.create({
+    title: Faker::Book.title,
+    content: Faker::Books::Dune.quote
+  })
+end
 
-# puts "10 books generated!"
+puts "10 books generated!"
